@@ -1,0 +1,15 @@
+---
+resources:
+- name: resource-tutorial
+  type: git
+  source:
+    uri: https://github.com/moriyamaES/concourse-tutorial-fork
+    branch: develop
+
+jobs:
+- name: job-hello-world
+  public: true
+  plan:
+  - get: resource-tutorial
+  - task: hello-world
+    file: resource-tutorial/tutorials/basic/task-hello-world/task_konnichiha_sekei.yml
