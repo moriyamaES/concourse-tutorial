@@ -3,7 +3,7 @@ resources:
 - name: resource-tutorial
   type: git
   source:
-    uri: https://github.com/moriyamaES/concourse-tutorial-fork
+    uri: https://github.com/moriyamaES/concourse-tutorial
     branch: develop
 
 jobs:
